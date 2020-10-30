@@ -1,6 +1,6 @@
 # Guia Introdutório do MongoDB
 
-Olá, este é um guia sobre o banco de dados MongoDB 🍃 
+Olá, este é um guia introdutório sobre o banco de dados MongoDB. 🍃 
 
 Seja bem-vinda!
 
@@ -24,17 +24,17 @@ Seja bem-vinda!
 
 # Conceitos Introdutórios
 
-- Banco de dados: É o conjunto de arquivos onde ficam salvas informações muito importantes para a aplicação. Por exemplo: estamos desenvolvendo um site de empregos onde candidatos adicionam seus nomes, cidade, cursos feitos e experiências, e as empresas adicionam nome, cidade e o tipo de profissional que precisam. Tanto as informações dos candidatos quanto as informações das empresas ficam salvas no banco de dados da aplicação (do site). 
+1. Banco de dados: É o conjunto de arquivos onde ficam salvas informações muito importantes para a aplicação. Por exemplo: estamos desenvolvendo um site de empregos onde candidatos adicionam seus nomes, cidade, cursos feitos e experiências, e as empresas adicionam nome, cidade e o tipo de profissional que precisam. Tanto as informações dos candidatos quanto as informações das empresas ficam salvas no banco de dados da aplicação (do site). 
 
 💡 A partir deste banco de dados, o backend vai criar os métodos para manipular e visualizar todas as informações adicionadas pelos usuários.
 
-- Prompt de Comando: É aquela tela preta usada para digitar códigos. Para ativá-la, digite cmd na barra de pesquisa do seu Windows e abra o prompt de comando. Nessa primeira etapa, vamos aprender banco de dados inserindo, excluindo, editando e visualizando os dados pelo prompt de comando. Não vai ser pelo VSCode desta vez e nem vamos adicionar como faríamos num site (pois ainda não temos nenhum site construído).
+2. Prompt de Comando: É aquela tela preta usada para digitar códigos. Para ativá-la, digite cmd na barra de pesquisa do seu Windows e abra o prompt de comando. Nessa primeira etapa, vamos aprender banco de dados inserindo, excluindo, editando e visualizando os dados pelo prompt de comando. Não vai ser pelo VSCode desta vez e nem vamos adicionar como faríamos num site (pois ainda não temos nenhum site construído).
 
-- Banco de Dados Relacional: É um banco de dados que guarda e manipula as informações de maneira estruturada, ordenada. Eles usam uma linguagem própria para a comunicação, a *Structured Query Language*, ou SQL. Por isso os bancos relacionais também são chamados de *Bancos SQL*. 
+3. Banco de Dados Relacional: É um banco de dados que guarda e manipula as informações de maneira estruturada, ordenada. Eles usam uma linguagem própria para a comunicação, a *Structured Query Language*, ou SQL. Por isso os bancos relacionais também são chamados de *Bancos SQL*. 
 
 Eles são baseado em esquemas, criando tabelas, campos e relacionamentos entre as informações para depois adicionar os dados. Construí-lo é como construir uma casa do zero: é necessário dividir o terreno, fazer a base, instalar as colunas para só depois colocar os tijolos, formar os cômodos, telhado, etc. **A estrutura vem primeiro**.
 
-- Banco de Dados Não Relacional: Aqui os esquemas relacionais não são necessários, é só adicionar os dados. Também são chamados de Bancos NoSQL, ou **Not Only** *Structured Query Language*, "não apenas SQL". Ou seja: ele pode usar SQL ou não. 
+4. Banco de Dados Não Relacional: Aqui os esquemas relacionais não são necessários, é só adicionar os dados. Também são chamados de Bancos NoSQL, ou **Not Only** *Structured Query Language*, "não apenas SQL". Ou seja: ele pode usar SQL ou não. 
 
 > Vale ressaltar que NoSQL não é apenas um tipo de banco de dados. Existe um mundo de tecnologias, ferramentas e conceitos que são NoSQL.
 
