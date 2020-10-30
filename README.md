@@ -4,7 +4,7 @@ Olá, este é um guia introdutório sobre o banco de dados MongoDB. 🍃
 
 Seja bem-vinda!
 
-<img src=https://i.imgur.com/uF1tXio.gif alt="Ilustração. Tela de computador suspensa, com várias pastas. Na frente da tela, uma lupa. Atrás da tela, um móvel com várias gavetas, fazendo alusão ao banco de dados." width="400" height="200">
+<img src=https://i.imgur.com/tc753FH.gif alt="Ilustração. Tela de computador suspensa, com várias pastas. Na frente da tela, uma lupa. Atrás da tela, um móvel com várias gavetas, fazendo alusão ao banco de dados." width="400" height="400">
 
 # Sumário
 
@@ -12,7 +12,15 @@ Seja bem-vinda!
 
 1. [Conceitos Introdutórios](#Conceitos-Introdutórios)
 
-2. [Bancos de Dados NoSQL Não Relacionais](#Bancos-de-Dados-NoSQL-Não-Relacionais)
+1.1 [Banco de Dados](#Banco-de-Dados)
+
+1.2 [Prompt de Comando](#Prompt-de-Comando)
+
+1.3 [Bancos de Dados Relacional](#Banco-de-Dados-Relacional)
+
+1.4 [Banco de Dados Não Relacional](#Banco-de-Dados-Não-Relacional)
+
+2. [Detalhando Bancos de Dados Não Relacionais](#Detalhando-Bancos-de-Dados-Não-Relacionais)
 
 2.1 [Tipos de Bancos de Dados NoSQL](#Tipos-de-Bancos-de-Dados-NoSQL)
 
@@ -24,23 +32,31 @@ Seja bem-vinda!
 
 # Conceitos Introdutórios
 
-**1. Banco de dados**: É o conjunto de arquivos onde ficam salvas informações muito importantes para a aplicação. 
+## Banco de dados
 
-Por exemplo: estamos desenvolvendo um site de empregos onde candidatos adicionam seus nomes, cidade, cursos feitos e experiências, e as empresas adicionam nome, cidade e o tipo de profissional que precisam. Tanto as informações dos candidatos quanto das empresas ficam salvas no banco de dados da aplicação (do site). 
+É o conjunto de arquivos onde informações muito importantes para a aplicação ficam salvas. 
 
-> A partir deste banco de dados, o backend vai criar os métodos para manipular e visualizar todas as informações adicionadas pelos usuários.
+Por exemplo: estamos desenvolvendo um site de empregos (a aplicação) onde candidatos adicionam seus nomes, cidade, cursos feitos e experiências, e as empresas adicionam nome, cidade e o tipo de profissional que precisam. Tanto as informações dos candidatos quanto das empresas ficam salvas no banco de dados da aplicação. 
 
-**2. Prompt de Comando**: É aquela tela preta usada para digitar códigos. Para ativá-la, digite cmd na barra de pesquisa do seu Windows e abra o prompt de comando. 
+> :bulb: A partir deste banco de dados, o backend vai criar os métodos para manipular e visualizar todas as informações adicionadas pelos usuários.
+
+## Prompt de Comando 
+
+É aquela tela preta usada para digitar códigos. Para ativá-la, digite cmd na barra de pesquisa do seu Windows e abra o prompt de comando. 
 
 Nessa primeira etapa, vamos aprender banco de dados inserindo, excluindo, editando e visualizando os dados pelo prompt de comando. Não vai ser pelo VSCode desta vez e nem vamos adicionar como faríamos num site (pois ainda não temos nenhum site construído).
 
-**3. Banco de Dados Relacional**: É um banco de dados que guarda e manipula as informações de maneira estruturada, ordenada. Eles usam uma linguagem própria para a comunicação, a *Structured Query Language*, ou SQL. Por isso os bancos relacionais também são chamados de *Bancos SQL*. Eles são baseado em esquemas, criando tabelas, campos e relacionamentos entre as informações, para só depois adicionar os dados. 
+## Banco de Dados Relacional
+
+É um banco de dados que guarda e manipula as informações de maneira estruturada, ordenada. Eles usam uma linguagem própria para a comunicação, a *Structured Query Language*, ou SQL. Por isso os bancos relacionais também são chamados de *Bancos SQL*. Eles são baseado em esquemas, criando tabelas, campos e relacionamentos entre as informações, para só depois adicionar os dados. 
 
 Construí-lo é como se você fosse preparar uma casa do zero: é necessário dividir o terreno, fazer a base, instalar as colunas, construir as paredes, telhado, etc, para depois decorar, colocar o sofá, camas, fogão, TV... **A construção vem primeiro e é feita por você. Só depois que a decoração e utensílios são adicionados.**. 
 
 Neste exemplo, a construção da casa seria construir a estrutura do seu banco de dados. Colocar a decoração, os eletrodomésticos, móveis e todo o resto seria finalmente adicionar os dados no banco.
 
-**4. Banco de Dados Não Relacional**: Aqui, os esquemas relacionais não são necessários, é só adicionar os dados. Eles também são chamados de *Bancos NoSQL*, ou **Not Only** *Structured Query Language*, "não apenas SQL". Ou seja: ele pode usar SQL ou não. 
+## Banco de Dados Não Relacional
+
+Aqui, os esquemas relacionais não são necessários, é só adicionar os dados. Eles também são chamados de *Bancos NoSQL*, ou **Not Only** *Structured Query Language*, "não apenas SQL". Ou seja: ele pode usar SQL ou não. 
 
 Fazendo uma analogia com a construção da casa, usar o banco NoSQL seria **apenas não construir a casa** e ir morar num  galpão enorme, onde você pode deixar seus móveis só num cantinho, se quiser, e não precisa preencher necessariamente todos os espaços. Pode, quem sabe, chamar mais umas 50 pessoas para morar com você. É livre? É livre. Mas pode trazer problemas posteriores se essa não é a vida que você desejou... 
 
@@ -55,7 +71,7 @@ Por dispensar uma estrutura prévia e outros diferenciais, os Bancos NoSQL têm 
  
  > Observação importante: "NoSQL" não é apenas um tipo de banco de dados. Existe um mundo de tecnologias, ferramentas e conceitos que são NoSQL.
 
-# Bancos de Dados Não Relacionais NoSQL
+# Detalhando Bancos de Dados Não Relacionais
 
 ## Tipos de Bancos de Dados NoSQL
 
