@@ -79,23 +79,62 @@ Para entender melhor os tipos de Bancos de Dados NoSQL explicados a seguir, acom
 
 <img src=https://micreiros.com/wp-content/uploads/art1.jpg alt="Imagem com resumo dos tipos de bancos NoSQL tratados a seguir" width="700" height="200">
 
-1. Tipo Chave-valor: São mais usados em aplicações de jogos, publicidade online, internet das coisas. Possuem "escalabilidade horizontal", podem crescer quase que sem fronteiras, e as consultas são bem rápidas. Bancos deste tipo armazenam dados no padrão chave-valor, como as tabelas de dispersão. Exemplos: MemcacheD, Riak e Redis. 
-
-<img src=https://upload.wikimedia.org/wikipedia/commons/1/1c/Hash2.JPG alt="tabela de dispersão" width="700" height="150">
-
-¹Exemplo de uma tabela hash ou tabela de dispersão.
+**1. Tipo Chave-valor**: São mais usados em aplicações de jogos, publicidade online, internet das coisas. Possuem "escalabilidade horizontal", podem crescer quase que sem fronteiras, e as consultas são bem rápidas. Bancos deste tipo armazenam dados no padrão chave-valor, como as tabelas de dispersão. Exemplos: MemcacheD, Riak e Redis. 
  
-2. Tipo Grafos: Utilizam vértices e arestas e são usados em aplicativos que precisam de um conjunto de dados altamente conectados, como redes sociais, mecanismos de reconhecimento e controle de fraudes. Exemplos: Property Grafh e RDF. Ferramentas para gerenciá-los: Neo4j e Giraph. 
+**2. Tipo Grafos**: Utilizam vértices e arestas e são usados em aplicativos que precisam de um conjunto de dados altamente conectados, como redes sociais, mecanismos de reconhecimento e controle de fraudes. Exemplos: Property Grafh e RDF. Ferramentas para gerenciá-los: Neo4j e Giraph. 
  
-3. Tipo Colunar ou Orientado a Colunas: Importante para performance de consulta analítica, pois reduz a necessidade de entrada e saída de dados o tempo todo. Exemplos: Cassandra e Hbase. 
+**3. Tipo Colunar** ou Orientado a Colunas: Importante para performance de consulta analítica, pois reduz a necessidade de entrada e saída de dados o tempo todo. Exemplos: Cassandra e Hbase. 
  
-4. Tipo Pesquisa: Importante para indexação, agregação e pesquisa de registros em **dados semiestruturados**. É caracterizado pela alta performance, baixa latência e análise de dados praticamente em tempo real. Exemplos: Amazon ES, usado pelo pessoal da Expedia.
+**4. Tipo Pesquisa**: Importante para indexação, agregação e pesquisa de registros em **dados semiestruturados**. É caracterizado pela alta performance, baixa latência e análise de dados praticamente em tempo real. Exemplos: Amazon ES, usado pelo pessoal da Expedia.
  
-5. Tipo Documentos: Armazena documentos e também é conhecido como Modelo de Dados semi-estruturados, usando o próprio formato "chave-valor", como o JSON. Os documentos são criados e se tornam unidades independentes. Exemplos: MongoDB e CouchDB.
+**5. Tipo Documentos**: Armazena documentos e também é conhecido como Modelo de Dados semi-estruturados, usando o próprio formato "chave-valor", como o JSON. Os documentos são criados e se tornam unidades independentes. Exemplos: MongoDB e CouchDB.
 
 # O MongoDB
 
 Finamente chegamos nele!
+
+O Mongo ajuda a criar **documentos, collections e databases**:
+
+**1. Documentos**: Os documentos são as informações que ficam guardadas dentro de um par de chaves. Exemplo:
+{"nome": "Mariana", "idade":29}.
+
+**2. Collections**: É um conjunto de documentos. Se você já estudou arquivos JSON - o que é muito provável -, a collection é como se fosse o arquivo JSON, guardando vários objetos. Exemplo:
+`pessoas.json` ou `collection pessoas`:
+```js
+[
+  {"nome":"Mariana","idade":29},
+  {"nome":"Jorge","idade":53},
+  {"nome":"Gustavo","idade":48}
+]
+```
+
+**3. Databases**: É o conjunto de collections. É como se fosse a pasta de JSONs ou a pasta Model da API.
+
+## Mão no Código
+
+Depois do Mongo instalado, trabalharemos sempre com **dois prompts de comando abertos**: O primeiro para "acionar" o MongoDB e deixá-lo rodando na máquina e o segundo para manipular os dados que iremos adicionar.
+
+Então vamos lá:
+- No primeiro prompt, digite o comando `mongod`. Agora o server está rodando e é possível mexer nos dados no segundo prompt sem perder nada. 
+- No segundo prompt, digite `mongo` para que o terminal consiga ler os comandos Mongo.
+
+### Preenchendo o database
+> Vamos criar um banco de dados com matérias a ser estudadas nos nichos "programação" e "humanas".
+
+**1.** A primeira coisa a fazer é **criar o banco de dados e entrar nele**. Para isso, digite `use <nome-do-banco-de-dados>` no segundo terminal. Pronto, está criado e você já está dentro dele. 
+
+> Aqui, criaremos a database `cursos`.
+
+**2.** Segundo passo: **Crie sua primeira collection** com o comando `db.createCollection(<"nomedacollection">)`. 
+
+> Aqui, criaremos as collections `collectionCursosProgramacao` e `collectionCursosHumanas`)
+
+**3.** Verifique se o banco realmente foi criado, digitando `show databases`. Seu novo banco deve estar na lista que vai aparecer.
+
+**4.** Hora de rechear seus JSONs, opa, suas collections 😅. Lembre-se, aqui é tudo pelo prompt de comando, então não será tão divertido quanto digitar no VSCode. Digite o comando `db.<nome-da-collection>.insertOne({<informações-a-adicionar>})`. Para inserir vários documentos, o comando é `db.<nomedacollection>.insertMany({<informações-a-adicionar>})`.
+
+### Manupulando os dados
+
 
 
 
