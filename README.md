@@ -4,7 +4,7 @@ Olá, este é um guia introdutório sobre o banco de dados MongoDB. 🍃
 
 Seja bem-vinda!
 
-<img src=https://i.imgur.com/tc753FH.gif alt="Ilustração. Tela de computador suspensa, com várias pastas. Na frente da tela, uma lupa. Atrás da tela, um móvel com várias gavetas, fazendo alusão ao banco de dados." width="400" height="400">
+<img src=https://i.imgur.com/tc753FH.gif alt="Ilustração. Tela de computador suspensa, com várias pastas. Na frente da tela, uma lupa. Atrás da tela, um móvel com várias gavetas, fazendo alusão ao banco de dados." width="400" height="400" img style="float: right">
 
 # Sumário
 
